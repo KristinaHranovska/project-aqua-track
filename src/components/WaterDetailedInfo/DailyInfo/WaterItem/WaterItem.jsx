@@ -11,7 +11,7 @@ function WaterItem({ data }) {
 
   const formatAmount = (amount) => {
     const mlAmount = amount * 1000;
-    return `${mlAmount} ml`;
+    return `${mlAmount}\u00A0ml`;
   };
 
   const formatTime = (isoString) => {
