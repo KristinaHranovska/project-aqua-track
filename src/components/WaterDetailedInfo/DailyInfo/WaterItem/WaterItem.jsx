@@ -7,7 +7,7 @@ import css from './WaterItem.module.css';
 function WaterItem({ data }) {
   const { openModal } = useModalContext();
 
-  const { id, amount, time } = data;
+  const { id, amount, time, date } = data;
 
   const formatAmount = (amount) => {
     const mlAmount = amount * 1000;
@@ -28,7 +28,7 @@ function WaterItem({ data }) {
       </svg>
       <div className={css.info}>
         <p className={css.info_ml}>{formatAmount(amount)}</p>
-        <p className={css.info_time}>{formatTime(time)} AM</p>
+        <p className={css.info_time}>{formatTime(time? time : date)} AM</p>
       </div>
       <div className={css.btns}>
         <button
