@@ -28,7 +28,7 @@ function WaterItem({ data }) {
       </svg>
       <div className={css.info}>
         <p className={css.info_ml}>{formatAmount(amount)}</p>
-        <p className={css.info_time}>{formatTime(time? time : date)} AM</p>
+        <p className={css.info_time}>{formatTime(time? time : date)}</p>
       </div>
       <div className={css.btns}>
         <button
