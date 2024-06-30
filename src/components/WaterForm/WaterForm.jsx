@@ -88,6 +88,8 @@ const WaterForm = ({ operationType, recordId }) => {
       }
     } catch (error) {
       toast.error('Invalid value of water! Min: 0, Max: 500');
+    } finally {
+      closeModal();
     }
   };
 
