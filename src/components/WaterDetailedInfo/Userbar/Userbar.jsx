@@ -4,7 +4,7 @@ import { icons as sprite } from '../../../shared/icons/index';
 import { useAuth } from '../../../hooks/useAut';
 import LogOutModal from '../../Modals/LogOutModal/LogOutModal';
 import { useModalContext } from '../../../context/useModalContext';
-import UserSettingsModal from '../../Modals/UserSettingsModal/UserSettingsModal';
+// import UserSettingsModal from '../../Modals/UserSettingsModal/UserSettingsModal';
 import { useDispatch, useSelector } from 'react-redux';
 import { refreshUser } from '../../../redux/auth/operation';
 import { selectUser } from '../../../redux/auth/selectors';
@@ -67,11 +67,9 @@ const Userbar = () => {
             <ul className={css.wrapperLink}>
               <li>
                 <a
-                  onClick={() =>
-                    openModal(
-                      <UserSettingsModal setIsUserUpdated={setIsUserUpdated} />
-                    )
-                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
                   className={css.userBarLink}
                   href="#settings"
                 >

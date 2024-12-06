@@ -1,53 +1,127 @@
 .wrapperStyle {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
 }
 
 .wrapperElement {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 .btnInfo {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 
-    background-color: transparent;
-    border: none;
-    transform: scale(1);
+  background-color: transparent;
+  border: none;
+  transform: scale(1);
 
-    transition: transform var(--animation);
+  transition: transform var(--animation);
 }
 
 .btnInfo:hover,
 .btnInfo:active {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .wrapperTracker {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 @media (min-width: 768px) {
-    .iconInfo {
-        width: 24px;
-        height: 24px;
-    }
+  .iconInfo {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .wrapperTracker {
-        flex-direction: row;
-        gap: 32px;
-    }
+  .wrapperTracker {
+    flex-direction: row;
+    gap: 32px;
+  }
 
-    .iconInfo {
-        width: 30px;
-        height: 30px;
-    }
+  .iconInfo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.feedbackSection {
+  margin-top: 40px;
+  padding: 24px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedbackTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+.feedbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  color: var(--dark-blue);
+}
+
+.formInput,
+.formTextarea {
+  padding: 12px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formTextarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submitButton {
+  padding: 12px 24px;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--dark-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .feedbackSection {
+    padding: 32px;
+  }
+
+  .feedbackTitle {
+    font-size: 28px;
+  }
+
+  .formInput,
+  .formTextarea {
+    font-size: 16px;
+  }
 }

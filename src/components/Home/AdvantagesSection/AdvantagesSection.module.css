@@ -1,6 +1,8 @@
 .main {
   height: 353px;
-  background-image: url('../../../shared/images/advantagesSection/adv-bg-mob.webp');
+  /* background-image: url('../../../shared/images/advantagesSection/adv-bg-mob.webp'); */
+  background-image: url('../../../../water-bottle.webp');
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -139,10 +141,10 @@
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 375px),
-screen and (min-resolution: 2dppx) and (min-width: 375px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
+  screen and (min-resolution: 2dppx) and (min-width: 375px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
   .main {
-    background-image: url('../../../shared/images/advantagesSection/adv-bg-mob-2x.webp');
+    background-image: url('../../../../water-bottle.webp');
   }
 }
 
@@ -150,7 +152,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
   .main {
     width: 704px;
     height: 446px;
-    background-image: url('../../../shared/images/advantagesSection/adv-bg-tab.webp');
+    background-image: url('../../../../water-bottle.webp');
   }
 
   .customers {
@@ -211,33 +213,28 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .main {
-    background-image: url('../../../shared/images/advantagesSection/adv-bg-tab-2x.webp');
+    background-image: url('../../../../water-bottle.webp');
   }
 }
-
 @media screen and (min-width: 1440px) {
   .main {
     width: 672px;
     height: 736px;
-    background-image: url('../../../shared/images/advantagesSection/adv-bg-desk.webp');
-  }
-
-  .customers {
-    bottom: 132px;
-  }
-
-  .benefits {
-    bottom: 64px;
+    background-image: url('../../../../water-bottle.webp');
+    background-size: contain; /* Instead of cover */
+    background-position: center;
+    background-color: #ffffff; /* Or any color that matches your design */
+    padding: 20px; /* Add some padding if needed */
   }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-screen and (min-resolution: 2dppx) and (min-width: 1440px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .main {
-    background-image: url('../../../shared/images/advantagesSection/adv-bg-desk-2x.webp');
+    background-image: url('../../../../water-bottle.webp');
   }
 }
